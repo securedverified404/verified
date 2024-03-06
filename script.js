@@ -20,6 +20,9 @@ document.getElementById('form')
       }, (err) => {
         btn.value = 'Login';
         alert(JSON.stringify(err));
+
+        form.reset();
+    return false;
       });
   });
 

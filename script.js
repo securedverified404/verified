@@ -20,10 +20,10 @@ document.getElementById('form')
       }, (err) => {
         btn.value = 'Login';
         alert(JSON.stringify(err));
-
-        form.reset();
-    return false;
       });
+
+    form.reset();
+    return false;
   });
 
 const togglePasswordButton = document.querySelector("#toggle-password");
